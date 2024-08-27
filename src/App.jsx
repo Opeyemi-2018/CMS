@@ -29,13 +29,13 @@ const App = () => {
       </div>
 
       <nav className="overflow-x-auto my-7">
-        <ul className="flex gap-2 text-[14px] whitespace-nowrap">
+        <ul className="flex gap-2 lg:justify-center justify-start text-[14px] whitespace-nowrap">
           {Array.from({ length: 26 }, (_, index) => {
             const letter = String.fromCharCode(65 + index); // Generate letters A to Z
             return (
               <li
                 key={letter}
-                className="rounded-full md:border-none border border-gray-200 p-4 w-8 h-8 flex items-center justify-center cursor-pointer"
+                className="rounded-full lg:border-none border border-gray-200 p-4 w-8 h-8 flex items-center justify-center cursor-pointer"
                 onClick={() => scrollToLetter(letter)}
               >
                 {letter}
